@@ -8,4 +8,5 @@ using namespace std;
 class ibu{
     public:
         string nama;
+        vector<anak*> list_anak;
 };
