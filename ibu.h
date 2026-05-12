@@ -10,4 +10,8 @@ class ibu{
     public:
         string nama;
         vector<anak*> list_anak;
+
+        ibu(string pnama) :nama(pnama){
+            cout <<"ibu \""<<nama<<"\" ada"<<endl;
+        }
 };
