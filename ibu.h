@@ -21,6 +21,9 @@ class ibu{
         void cetakAnak();
 };
 
+void ibu::tambahAnak(anak* panak){
+    list_anak.push_back(panak);
+}
 
 
 #endif // IBU_H
