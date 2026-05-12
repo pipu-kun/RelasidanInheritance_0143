@@ -2,17 +2,18 @@
 #include <string>
 using namespace std;
 
-class admin;
-class member;
-
-class user{
+class member{ 
     public:
         int id;
-        string nama;
         string email;
+        string nama;
+        string status;
 
-        void generateID(){
-            id = rand() % 1000 + 1; // generate ID acak antara 1 dan 1000
+        void showProfile(){
+            cout << "ID: " << id << endl;
+            cout << "Nama: " << nama << endl;
+            cout << "Email: " << email << endl;
+            cout << "Status: " << status << endl;
         }
 };
 
@@ -34,18 +35,15 @@ class admin{
             }
         }
 };
-class member{
+
+class user{
     public:
         int id;
-        string email;
         string nama;
-        string status;
+        string email;
 
-        void showProfile(){
-            cout << "ID: " << id << endl;
-            cout << "Nama: " << nama << endl;
-            cout << "Email: " << email << endl;
-            cout << "Status: " << status << endl;
+        void generateID(){
+            id = rand() % 1000 + 1; // pake random akhirnya
         }
 };
 
@@ -53,7 +51,6 @@ int main(){
     admin admin1;
     member members[3];
 
-    // Membuat member
     for (int i = 0; i < 3; i++){
         members[i].id = i + 1;
         members[i].nama = "Member" + to_string(i + 1);
@@ -61,9 +58,6 @@ int main(){
         members[i].status = "active";
     }
 
-    // Menampilkan semua member
     admin1.showAllMembers(members, 3);
-
-    // Menonaktifkan member ke-2
     admin1.toggleActivation(members[1]);
 }
