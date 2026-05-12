@@ -4,3 +4,7 @@
 #include <string>
 #include "anak.h"
 using namespace std;
+
+class ibu{
+    
+};
