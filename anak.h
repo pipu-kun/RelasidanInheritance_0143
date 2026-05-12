@@ -12,7 +12,9 @@ class anak{
         anak(string pnama) :nama(pnama){
             cout <<"anak \""<<nama<<"\" ada"<<endl;
         }
-        ~anak(){}
+        ~anak(){
+            cout <<"anak \""<<nama<<"\" tidak ada"<<endl;
+        }
 
 };
 
