@@ -3,6 +3,11 @@
 
 
 class anak{
+    public:
+        string nama;
+
+        
+
 };
 
 #endif // ANAK_H
