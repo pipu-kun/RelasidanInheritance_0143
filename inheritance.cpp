@@ -35,16 +35,6 @@ class pelajar : public orang {
     }
 };
 
-$8
-39
-
-1
-12
-13
-4
-
-01
-
 int main() {
     pelajar siswa1("andi laksono", "SMAN 1 Bantul");
     cout << siswa1.perkenalan();
