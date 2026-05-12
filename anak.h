@@ -7,7 +7,7 @@ class anak{
         string nama;
 
         anak(string pnama) :nama(pnama){
-            
+            cout <<"anak \""<<nama<<"\" ada"<<endl;
         }
 
 };
