@@ -17,4 +17,10 @@ class ibu{
         ~ibu(){
             cout <<"ibu \""<<nama<<"\" tidak ada"<<endl;
         }
+        void tambahAnak(anak*);
+        void cetakAnak();
 };
+
+
+
+#endif // IBU_H
