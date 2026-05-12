@@ -6,7 +6,9 @@ class anak{
     public:
         string nama;
 
-        
+        anak(string pnama) :nama(pnama){
+            
+        }
 
 };
 
