@@ -2,4 +2,5 @@
 #define IBU_H
 #include <iostream>
 #include <string>
+#include "anak.h"
 using namespace std;
