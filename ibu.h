@@ -25,5 +25,13 @@ void ibu::tambahAnak(anak* panak){
     list_anak.push_back(panak);
 }
 
+void ibu::cetakAnak(){
+    cout <<"daftar anak dari ibu " << this->nama << ":\n";
+    
+    for (int i = 0; i < list_anak.size(); i++){
+        cout << "- " << list_anak[i]->nama << endl;
+    }
+    cout << endl;
+}
 
 #endif // IBU_H
