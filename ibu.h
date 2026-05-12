@@ -14,4 +14,7 @@ class ibu{
         ibu(string pnama) :nama(pnama){
             cout <<"ibu \""<<nama<<"\" ada"<<endl;
         }
+        ~ibu(){
+            cout <<"ibu \""<<nama<<"\" tidak ada"<<endl;
+        }
 };
