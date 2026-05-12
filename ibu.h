@@ -6,5 +6,6 @@
 using namespace std;
 
 class ibu{
-    
+    public:
+        string nama;
 };
